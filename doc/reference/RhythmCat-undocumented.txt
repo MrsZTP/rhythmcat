@@ -1,0 +1,18 @@
+97% symbol docs coverage.
+294 symbols documented.
+4 symbols incomplete.
+10 not documented.
+
+
+DEBUG_MODE
+GETTEXT_PACKAGE
+IS_RC_GUI_SCROLLED_TEXT (<parameters>)
+IS_RC_GUI_SCROLLED_TEXT_CLASS (<parameters>)
+RC_GUI_SCROLLED_TEXT (<parameters>)
+RC_GUI_SCROLLED_TEXT_CLASS (<parameters>)
+RC_GUI_SCROLLED_TEXT_TYPE
+RC_PLAYER_TYPE
+RC_PLUGIN_MAGIC_NUMBER
+RC_PLUGIN_OLD_MAGIC_NUMBER
+
+

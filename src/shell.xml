@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<node name="/org/supercat/RhythmCat/Shell">
+
+  <interface name="org.supercat.RhythmCat.Shell">
+    <annotation name="org.freedesktop.DBus.GLib.CSymbol" value="rc_shell"/>
+    <method name="LoadURI">
+      <annotation name="org.freedesktop.DBus.GLib.CSymbol" value="rc_shell_load_uri"/>
+      <arg type="s" name="uri" direction="in"/>
+    </method>
+    <method name="Play"/>
+    <method name="Pause"/>
+    <method name="Stop"/>
+    <method name="Prev"/>
+    <method name="Next"/>
+    <method name="GetState">
+      <arg type="i" name="state" direction="out"/>
+    </method>
+    <method name="GetPosition">
+      <arg type="x" name="pos" direction="out"/>
+    </method>
+    <method name="SetPosition">
+      <arg type="x" name="pos" direction="in"/>
+    </method>
+    <method name="GetDuration">
+      <arg type="x" name="dura" direction="out"/>
+    </method>
+    <method name="GetVolume">
+      <arg type="d" name="vol" direction="out"/>
+    </method>
+    <method name="SetVolume">
+      <arg type="d" name="vol" direction="in"/>
+    </method>
+    <method name="GetRepeatMode">
+      <arg type="i" name="repeat" direction="out"/>
+    </method>
+    <method name="SetRepeatMode">
+      <arg type="i" name="repeat" direction="in"/>
+    </method>
+    <method name="GetRandomMode">
+      <arg type="i" name="random" direction="out"/>
+    </method>
+    <method name="SetRandomMode">
+      <arg type="i" name="random" direction="in"/>
+    </method>
+    <method name="GetCurrentTrack">
+      <arg direction="out" name="uri" type="s"/>
+      <arg direction="out" name="title" type="s"/>
+      <arg direction="out" name="artist" type="s"/>
+      <arg direction="out" name="album" type="s"/>
+      <arg direction="out" name="comment" type="s"/>
+      <arg direction="out" name="duration" type="t"/>
+      <arg direction="out" name="tracknum" type="u"/>
+      <arg direction="out" name="bitrate" type="u"/>
+      <arg direction="out" name="samplerate" type="u"/>
+      <arg direction="out" name="channel" type="u"/>
+    </method>
+    <method name="GetCurrentLyricText">
+      <arg direction="out" name="text" type="s"/>
+    </method>
+    <method name="SetLyricFile">
+      <arg direction="in" name="file" type="s"/>
+    </method>
+    <method name="ShowMemProfile"/>
+    <signal name="StateChanged"/>
+    <signal name="MusicStarted"/>
+    <signal name="LyricLineChanged"/>
+  </interface>
+</node>
+

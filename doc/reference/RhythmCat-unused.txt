@@ -1,0 +1,2 @@
+RCGuiScrolledText(widget)
+RCPlayer(parent)

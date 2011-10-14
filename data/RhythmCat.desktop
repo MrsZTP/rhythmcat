@@ -1,0 +1,11 @@
+
+[Desktop Entry]
+Categories=GTK;AudioVideo;Player;
+Comment=RhythmCat Music Player
+GenericName=Music Player
+Icon=/usr/share/RhythmCat/images/RhythmCat_128x128.PNG
+Name=RhythmCat
+Exec=RhythmCat
+StartupNotify=false
+Type=Application
+Name[en_US]=RhythmCat Music Player

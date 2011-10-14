@@ -1,0 +1,104 @@
+2010-10-19  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* configure.in (AM_GNU_GETTEXT_VERSION): Bump to 0.18.1.
+
+2011-02-11  SuperCat    <supercatexpert@gmail.com>
+
+        * Added plugin support and Desktop Lyric Show plugin.
+
+2011-02-14  SuperCat    <supercatexpert@gmail.com>
+
+        * Use GtkUIManager to build menus.
+
+2011-02-23  SuperCat    <supercatexpert@gmail.com>
+
+        * Reading cover image in the tag of music file is now available.
+        * Try to remove lyric show, and put this feature into a plugin.
+
+2011-03-12  SuperCat    <supercatexpert@gmail.com>
+
+        * Added new color styles, and added the features below:
+
+          Automatic minimize at startup.
+          Minimize window when the close button is pressed.
+          Load last playing position at startup.
+          The player window can be always on top.
+          Automatic encoding detect by system locale settings.
+          Automatic remove the invalid music item.
+
+2011-03-23  SuperCat    <supercatexpert@gmail.com>
+
+        * Added mini mode.
+        * Added some comments to make Gtk-Doc docuemnt.
+        * Development reference manual has been made.
+        * Provide more interfaces to D-Bus.
+        
+2011-04-02  SuperCat    <supercatexpert@gmail.com>
+
+        * Fixed some bugs.
+        * Finished development documents of the project.
+
+2011-05-02  SuperCat    <supercatexpert@gmail.com>
+
+        * Completed the theme system.
+        * Added the feature that the user can see preview image of the theme.
+        * Removed color styles (merged to the theme system)
+        * Fixed some bugs.
+
+2011-05-10  SuperCat    <supercatexpert@gmail.com>
+
+        * Implemented a custom widget for scrollable text show.
+        * Fixed some bugs.
+        * Better GTK3 support.
+
+2011-05-18  SuperCat    <supercatexpert@gmail.com>
+
+        * Added Japanese translation.
+        * Fixed some bugs.
+
+2011-06-05  SuperCat    <supercatexpert@gmail.com>
+
+        * Added a new theme.
+        * Added some new plugins.
+        * Fixed some bugs.
+
+2011-08-02  SuperCat    <supercatexpert@gmail.com>
+
+        * Fixed some bugs.
+        * Added some new signals in the player object.
+        * Mark the unavailable music in the playlist (if auto-remove option
+          is not enabled).
+        * Need lower GTK2 version now (at least 2.12).
+ 
+2011-09-07  SuperCat    <supercatexpert@gmail.com>
+        * Added CUE sheet file support, including embeded CUE sheet in FLAC
+          file.
+
+2011-09-12  SuperCat    <supercatexpert@gmail.com>
+        * Fixed some bugs on CUE support.
+        * Added a Python plugin (only for experiment).
+        * Added more features on plugin support.
+
+2011-09-13  SuperCat    <supercatexpert@gmail.com>
+        * D-Bus can be disabled totally when being compiled (by using
+          --disable-dbus).
+        * Lyric file can be set by using D-Bus interface now.
+
+2011-09-24  SuperCat    <supercatexpert@gmail.com>
+        * Fixed some bugs.
+        * Added lyric crawler plugin.
+
+2011-09-25  SuperCat    <supercatexpert@gmail.com>
+        * Fixed some bugs, can be compiled on Win32 now.
+        * Enhanced lyric and cover image file search functions.
+
+2011-10-03  SuperCat    <supercatexpert@gmail.com>
+        * Added lyric and album image file binding.
+
+2011-10-07  SuperCat    <supercatexpert@gmail.com>
+        * Added proxy settings in lyric crawler plugin.
+
+2011-10-14  SuperCat    <supercatexpert@gmail.com>
+        * Disabled function g_mem_set_vtable() when the debug mode is
+          not enabled (prevent from large amounts usage of memory).
+
