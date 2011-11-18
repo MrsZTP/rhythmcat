@@ -672,14 +672,14 @@ static GtkActionEntry rc_menu_entries[] =
       N_("_Decrease Volume"), "<control>Down",
       N_("Decrease the volume"),
       G_CALLBACK(rc_gui_vol_down_menu_clicked) },
-    { "HelpContents", GTK_STOCK_HELP,
-      N_("_Contents"), "F1",
-      N_("Get help contents"),
-      NULL },
     { "HelpAbout", GTK_STOCK_ABOUT,
       N_("_About"), NULL,
       N_("About this player"),
       G_CALLBACK(rc_gui_about_player) },
+    { "HelpSupportedFormat", NULL,
+      N_("_Supported Format"), NULL,
+      N_("Check the supported music format of this player"),
+      G_CALLBACK(rc_gui_show_supported_format_dialog) },
     { "List1NewList", GTK_STOCK_NEW,
       N_("_New Playlist"), NULL,
       N_("Create a new playlist"),
@@ -881,6 +881,7 @@ static const gchar *rc_ui_info =
     "    </menu>"
     "    <menu action='HelpMenu'>"
     "      <menuitem action='HelpAbout'/>"
+    "      <menuitem action='HelpSupportedFormat'/>"
     "    </menu>"
     "  </menubar>"
     "  <popup action='List1PopupMenu'>"
@@ -1810,6 +1811,8 @@ void rc_gui_status_progress_set_progress()
         return;
     }
     percent = (gdouble)(completed_num) / rc_gui.status_task_length;
+    if(percent>1.0) percent = 1.0;
+    if(percent<0.0) percent = 0.0;
     g_snprintf(text, 63, "%u / %u", completed_num, rc_gui.status_task_length);
     gtk_progress_bar_set_text(GTK_PROGRESS_BAR(rc_gui.status_progress), text);
     gtk_progress_bar_set_fraction(GTK_PROGRESS_BAR(rc_gui.status_progress),

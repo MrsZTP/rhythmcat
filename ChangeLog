@@ -115,3 +115,21 @@
         * The version is now 1.0.0-RC2, it will be the last RC version. So the
           stable version is to be released in the next time.
 
+2011-11-02  SuperCat    <supercatexpert@gmail.com>
+        * Added auto-play feature when the player is started with commandline
+          arguments.
+
+2011-11-11  SuperCat    <supercatexpert@gmail.com>
+        * Added music locator plugin.
+        * Fixed some bugs.
+
+2011-11-14  SuperCat    <supercatexpert@gmail.com>
+        * Users can check the supported audio format by this music player now.
+        * Added more audio formats to supported format list.
+        * Added some error message with dialogs. So that the user can know the
+          reason for the errors without using terminals.
+
+2011-11-18  SuperCat    <supercatexpert@gmail.com>
+        * The first stable release version.
+
+

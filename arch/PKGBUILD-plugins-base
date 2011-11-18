@@ -35,5 +35,11 @@ build() {
   cd notify
   make -f Makefile3 || return 1
   make INSTALL_DIR=$startdir/pkg/usr/share/RhythmCat/plugins/notify install
+  cd ..
+
+  echo "Making plugin Music-Locator..."
+  cd music-locator
+  make -f Makefile3 || return 1
+  make INSTALL_DIR=$startdir/pkg/usr/share/RhythmCat/plugins/music-locator install
 }
 

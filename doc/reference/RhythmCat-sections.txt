@@ -143,6 +143,7 @@ rc_gui_load_playlist_dialog
 rc_gui_save_all_playlists_dialog
 rc_gui_bind_lyric_file_dialog
 rc_gui_bind_album_file_dialog
+rc_gui_show_supported_format_dialog
 </SECTION>
 
 <SECTION>
@@ -168,6 +169,7 @@ rc_plist_init
 rc_plist_exit
 rc_plist_insert_list
 rc_plist_insert_music
+rc_plist_insert_music_play
 rc_plist_list2_insert_item
 rc_plist_list2_refresh_item
 rc_plist_list2_remove_item
@@ -193,6 +195,7 @@ rc_plist_save_playlist
 rc_plist_load_playlist
 rc_plist_get_list_store
 rc_plist_get_list_head
+rc_plist_get_list_index
 rc_plist_list2_refresh
 rc_plist_import_job_get_length
 rc_plist_import_job_cancel
@@ -237,6 +240,8 @@ rc_gui_list1_get_model
 rc_gui_list2_get_model
 rc_gui_list1_get_cursor
 rc_gui_list2_get_cursor
+rc_gui_list1_scroll_to_index
+rc_gui_list2_scroll_to_index
 </SECTION>
 
 <SECTION>
